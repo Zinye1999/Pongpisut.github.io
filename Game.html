@@ -88,43 +88,19 @@
         <div class="content-wrapper">
           <!-- Content Header (Page header) -->
           <section class="content-header">
-            <h1>
-              404 Error Page
-            </h1>
-          </section>
-      
-          <!-- Main content -->
-          <section class="content">
-            <div class="error-page">
-              <h2 class="headline text-yellow"> 404</h2>
-      
-              <div class="error-content">
-                <h3><i class="fa fa-warning text-yellow"></i> Oops! Page not found.</h3>
-      
-                <p>
-                  We could not find the page you were looking for.
-                  Meanwhile, you may <a href="../../index.html">return to dashboard</a> or try using the search form.
-                </p>
-      
-                <form class="search-form">
-                  <div class="input-group">
-                    <input type="text" name="search" class="form-control" placeholder="Search">
-      
-                    <div class="input-group-btn">
-                      <button type="submit" name="submit" class="btn btn-warning btn-flat"><i class="fa fa-search"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <!-- /.input-group -->
+            <div class="form-group">
+                <h3>กติกา : ระบบจะทำการสุ่มเลข 1-100 <br>คุณมีโอกาส 5 ครั้งในการเดาตัวเลขดังกล่าว
+                  แล้วเติมลงในช่องว่างให้ถูกต้อง<br>ขอให้โชคดี!!!!
+                </h3>
+                <form method="get" id="form1">
+                 Number : <input type="text" name="fname"><br>
                 </form>
-              </div>
-              <!-- /.error-content -->
-            
-            <!-- /.error-page -->
-         
-          <!-- /.content -->
-              <button type="button" class="btn btn-block btn-warning btn-lg"><a href="index.html">Warning</button></a>
-          
+                
+                <button type="button" onclick="Run()" id="input">Submit</button>
+                <button type="button" onclick="Restart()" id="restart" >Restart</button>
+                <h1 class='des'></h1>
+                <h1 class='output'></h1>
+
           </section>
           <!-- /.content -->
         </div>
@@ -345,6 +321,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.18/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.18/js/demo.js"></script>
+<script src="/js/Game.js"></script>
 <script>
   $(document).ready(function () {
     $('.sidebar-menu').tree()
